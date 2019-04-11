@@ -22,11 +22,15 @@ Escreval("Qual o seu nome?")
 Leia(Nome)
 Escreval("======== Muito bem  ", nome, " Está pronto para sua mais nova aventura?==========")
 Leia(sn)
-enquanto sn <> "Sim"  faca
+enquanto (sn = "nao") ou (sn = "não")  faca
          timer 500
          Escreval("E agora?")
          Escreval("Já está pronto?")
          Leia(sn)
+fimenquanto
+enquanto (sn <> "sim") e (sn <> "não") faca
+         Escreval(" Desculpe não entendi. Digite novamente por favor")
+         leia(sn)
 fimenquanto
 escreval("==============================")
 escreval(" Muito bem!! Prepare-se")
